@@ -47,7 +47,7 @@ $("#main").after($("#motdrow"));
 $("#main").after("<div id='videoinfo' class='section'></div>");//create box to contain video title, description, and playlist options.
 
 
-$("#videoinfo").append("<div class='textheader'></div><div id='videoinfohead'><span id='addedbyTEXT'>Queued by <span id='addedby'></span></span><div id='headbottom'><div id='headright'><div id='ss7time' title='--:--'>0:00</div><div id='videolength'></div><div id='progbar'></div></div></div></div><div id='videoopts'></div>");
+$("#videoinfo").append("<div class='textheader'></div><div id='videoinfohead'><span id='addedbyTEXT'>Queued by <span id='addedby'></span></span><div id='headbottom'><div id='headright'><div id='ss7time' title='--:--'>0:00</div><div id='videolength'></div></div></div></div><div id='videoopts'></div>");
 $(".navbar-header").after($("#currenttitle")); //move video title below video player
 $("#headbottom").append("<button id='addmedia' title='Add Media' class='headbtn headbtnleft'></button>");
 $("#headbottom").append($("#newpollbtn"));
@@ -253,7 +253,7 @@ setvideotime = function() {
 	var t = _timeVIDEBLU.paused ? _timeVIDEBLU.raw : (new Date()).getTime()/1000 + _timeVIDEBLU.ofs; //
 	var percenttime = Math.round(t * 100 / currentmedia.seconds);
 	if (percenttime > 100) {percenttime = 0}
-	//$("#progbar").css("width", percenttime + "%");
+	$("#progbar").css("width", percenttime + "%");
 	setTimeout(setvideotime, 1000*(Math.round(t)+1 - t)); //Update time every second
 	t = Math.round(t);
 	var s = t % 60; t = Math.floor(t/60);
