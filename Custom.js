@@ -253,7 +253,7 @@ setvideotime = function() {
 	var t = _timeVIDEBLU.paused ? _timeVIDEBLU.raw : (new Date()).getTime()/1000 + _timeVIDEBLU.ofs; //
 	var percenttime = Math.round(t * 100 / currentmedia.seconds);
 	if (percenttime > 100) {percenttime = 0}
-	$("#progbar").css("width", percenttime + "%");
+	//$("#progbar").css("width", percenttime + "%");
 	setTimeout(setvideotime, 1000*(Math.round(t)+1 - t)); //Update time every second
 	t = Math.round(t);
 	var s = t % 60; t = Math.floor(t/60);
