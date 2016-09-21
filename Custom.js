@@ -498,7 +498,7 @@ return div;
 }
 
 $(document).ready(function() {
-$('<link id="chanfavicon" href="//i.imgur.com/d3ubSrM.png" type="image/x-icon" rel="shortcut icon" />')
+$('<link id="chanfavicon" href="//i.imgur.com/TN3LPQ1.png" type="image/x-icon" rel="shortcut icon" />')
 .appendTo("head");});
 
 // The HorizontalScroller Class accepts a jQuery object as its only argument
@@ -741,9 +741,9 @@ function scrollerInit() {
 
 $("#maincontain").css({"right": "1px", "left":""});
 $("#chatwrap").css({"right": "", "left":"1px"});
-$("#usercount").text($("#usercount").text().replace(/users?/,'kitsune'));
+$("#usercount").text($("#usercount").text().replace(/users?/,'marombas'));
 if (typeof(_connectedUsers) == 'undefined') { _connectedUsers = Callbacks.usercount; }
 Callbacks.usercount = function(data) {//currently for debugging purposes only. Doesn't do anything.
 	_connectedUsers(data);
-	$("#usercount").text($("#usercount").text().replace(/users?/,'kitsune'));
+	$("#usercount").text($("#usercount").text().replace(/users?/,'marombas'));
 }
