@@ -30,7 +30,7 @@ $("#userlisttoggle").text("");
 $("#controlsrow").after($("#motdrow"));//move channel description (motd) below controls
 $("#controlsrow").after($("#announcements"));//move cytube announcements below controls
 $(".container-fluid").append($("#footer"));//move footer into mainpage element
-$('#footer').children('.container').append('<p class="text-muted">PRAISE THE KEK.</p>');
+$('#footer').children('.container').append('<p class="text-muted credit">PRAISE THE KEK.</p>');
 
 //$(".vjs-error-display").append($("#voteskip"));
 //chat elements
