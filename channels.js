@@ -9,7 +9,7 @@ $("#rightpane").after(
 '</div>' +
 '<div class="scroll-images scrollable-x">' +
 '<a href="https://www.youtube.com/channel/UCZDD7mbBlV-Mg-vpI6wQvSA"><img src="//i.imgur.com/koegfFI.jpg" class="kek" /></a>' +
-
+'<a href="https://www.youtube.com/user/WAMamamoo"><img src="//i.imgur.com/6XzvXc3.png" class="kek" /></a>' +
 '</div></div></div>');
 // The HorizontalScroller Class accepts a jQuery object as its only argument
 // The argument is the parent container of the scrolling element
