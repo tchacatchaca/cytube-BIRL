@@ -118,7 +118,7 @@ $("#ploptions").append($("#shuffleplaylist"), $("#clearplaylist"), $("#getplayli
 $("#pldropdown").before($("#qlockbtn"));
 //channels
 
-$.getScript("//rawgit.com/tchacatchaca/cytube-BIRL/master/channels.js");
+//$.getScript("//rawgit.com/tchacatchaca/cytube-BIRL/master/channels.js");
 $.getScript("//rawgit.com/tchacatchaca/cytube-BIRL/master/overlay.js");
 
 $('#queuecontainer').hover(function(){
