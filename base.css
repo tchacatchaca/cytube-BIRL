@@ -632,7 +632,7 @@ div#videowrap {
 		#showmediaurl span:before {content: "Link"}
 		#showcustomembed span:before {content: "Embed"}
 		#showsearch span:before {content: "Search"}
-		#showplaylistmanager span:before {content: "Radio"}
+		#showplaylistmanager span:before {content: "Playlist & Radio"}
 	/*controls*/
 	.form-control {
     border: 0px solid #ccc;
